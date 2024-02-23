@@ -9,4 +9,4 @@
         - Select user data and generate a precisely filtered list.
         - Present the filtered list as the final output to the user.
 
-![Alt text]("final.png")
+![Laptop Genie](final.png)
