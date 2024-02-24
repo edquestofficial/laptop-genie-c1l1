@@ -12,6 +12,18 @@
                     Laptop Genie
                 </h1>
             </div>
+            <div class="conversationcontainer" id="chatcontainer">
+                {% for entry in conversation_list %}
+                <div class="{% if entry.bot %}bot{% else %}user{% endif %}"> 
+                    {% if entry.bot %}
+                    {{ entry.bot }}
+                    {% else %}
+                    {{ entry.user }}
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <!-- action = "/invite" -->
             <form action = "/converse" method="POST" class="center">
                 <input type ="text" name="user_input" id = "inputtextbox">
                 <input type="submit" value=" " id="submitbutton">
